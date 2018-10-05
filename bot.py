@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import os
 import random
-import youtube-dl
+import youtube_dl
 
 startup_extensions = [
   'message'

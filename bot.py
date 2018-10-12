@@ -127,6 +127,26 @@ async def rate(str : str):
         await bot.say('Are you kidding me, Xenzai is a freaking 10/10!')
     if 'Xenzai' not in str:
         await bot.say('I rate {} a {}/10'.format(str, random.choice(number)))
+        
+@bot.command(pass_context=True)
+async def richpres(ctx):
+  static void UpdatePresence()
+    {
+        DiscordRichPresence discordPresence;
+        memset(&discordPresence, 0, sizeof(discordPresence));
+        discordPresence.state = "SO BORED";
+        discordPresence.details = "PLEASE HELP MEH";
+        discordPresence.startTimestamp = 1507665886;
+        discordPresence.endTimestamp = 1507665886;
+        discordPresence.largeImageText = "Daimond_small";
+        discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
+        discordPresence.partySize = 1;
+        discordPresence.partyMax = 5;
+        discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
+        discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
+        Discord_UpdatePresence(&discordPresence);
+    }
+
   
 
 

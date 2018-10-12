@@ -131,7 +131,6 @@ async def rate(str : str):
 @bot.command(pass_context=True)
 async def richpres(ctx):
   bot.change_Presence()
-    {
         DiscordRichPresence discordPresence;
         memset(&discordPresence, 0, sizeof(discordPresence));
         discordPresence.state = "SO BORED";
@@ -145,7 +144,6 @@ async def richpres(ctx):
         discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
         discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
         Discord_UpdatePresence(&discordPresence);
-    }
 
   
 

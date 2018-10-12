@@ -130,7 +130,7 @@ async def rate(str : str):
         
 @bot.command(pass_context=True)
 async def richpres(ctx):
-  static void UpdatePresence()
+  bot.change_Presence()
     {
         DiscordRichPresence discordPresence;
         memset(&discordPresence, 0, sizeof(discordPresence));

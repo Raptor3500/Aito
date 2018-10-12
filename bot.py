@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix='aito ')
 bot.remove_command('help')
 ownerID = "274298631517896704"
 error = 0xFF0000
-messages = ["Rock, Paper, Scissors"]
+messages = ['rock', 'paper', 'scissors']
 
 # To remove the help command and make your own help command
 #bot.remove_command('help')
@@ -129,21 +129,18 @@ async def rate(str : str):
         await bot.say('I rate {} a {}/10'.format(str, random.choice(number)))
         
 @bot.command(pass_context=True)
-async def richpres(ctx):
-  bot.change_Presence()
-        DiscordRichPresence discordPresence;
-        memset(&discordPresence, 0, sizeof(discordPresence));
-        discordPresence.state = "SO BORED";
-        discordPresence.details = "PLEASE HELP MEH";
-        discordPresence.startTimestamp = 1507665886;
-        discordPresence.endTimestamp = 1507665886;
-        discordPresence.largeImageText = "Daimond_small";
-        discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
-        discordPresence.partySize = 1;
-        discordPresence.partyMax = 5;
-        discordPresence.spectateSecret = "MTIzNDV8MTIzNDV8MTMyNDU0";
-        discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
-        Discord_UpdatePresence(&discordPresence);
+async def rps(str : str):
+    str = str.strip()
+    if 'rock' in str:
+        await bot.say('I choose {}'.format(random.choice(number)))
+    if bot.say is 'rock'
+       await bot.say('TIE')
+    if bot.say is 'paper'
+       await bot.say('I win!!!!!!')
+    if bot.say is 'scissors'
+       await bot.say('I lost?!??!?')
+        
+    
 
   
 

@@ -133,11 +133,11 @@ async def rps(str : str):
     str = str.strip()
     if 'rock' in str:
         await bot.say('I choose {}'.format(random.choice(number)))
-    if bot.say is 'rock'
+    if 'rock' in str:
        await bot.say('TIE')
-    if bot.say is 'paper'
+    if 'paper' in str:
        await bot.say('I win!!!!!!')
-    if bot.say is 'scissors'
+    if 'scissors' in str:
        await bot.say('I lost?!??!?')
         
     

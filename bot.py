@@ -129,7 +129,7 @@ async def rate(str : str):
         await bot.say('I rate {} a {}/10'.format(str, random.choice(number)))
         
 @bot.command(pass_contenxt=True)
-async def purge(ctx, *args):
+async def purge(ctx, str : str):
   if ctx.message.author.id in ownerID:
     str = str.strip()
     await bot.say('Deleting Messages...')
@@ -138,8 +138,9 @@ async def purge(ctx, *args):
 @bot.command()
 async def choose(*args):
   mesg = ' '.join(args)
-  choices = ['mesg', 'mesg']
-  await bot.say(random.choice(choices))
+  str = str.strip()
+  choices = [str, mesg]
+  await bot.say('I choose {}'.format(random.choice(choices))
         
     
 

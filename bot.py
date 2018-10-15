@@ -140,7 +140,7 @@ async def choose(*args):
   mesg = ' '.join(args)
   str = str.strip()
   choices = [str, mesg]
-  await bot.say('I choose {}'.format(random.choice(choices))
+  await bot.say('I choose {}'.format(random.choice(choices)))
         
     
 
@@ -148,11 +148,5 @@ async def choose(*args):
 
 
 
-
-  
-  
-
-         
-  
 
 bot.run(os.environ.get('Token'))

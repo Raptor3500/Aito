@@ -138,7 +138,7 @@ async def purge(ctx, *args):
 @bot.command()
 async def choose(*args):
   mesg = ' '.join(args)
-  choices = mesg, mesg
+  choices = [mesg, mesg]
   await bot.say(random.choice(choices))
         
     

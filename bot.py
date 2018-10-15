@@ -129,8 +129,7 @@ async def rate(str : str):
         await bot.say('I rate {} a {}/10'.format(str, random.choice(number)))
         
 @bot.command(pass_contenxt=True)
-async def purge(ctx, str : str):
-  if ctx.str.author.id in ownerID:
+async def purge(str : str):
     await bot.say('Deleting Messages...')
     await bot.delete_message(str)
     

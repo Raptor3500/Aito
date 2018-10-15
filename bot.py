@@ -128,10 +128,13 @@ async def rate(str : str):
     if 'Xenzai' not in str:
         await bot.say('I rate {} a {}/10'.format(str, random.choice(number)))
         
-@bot.command(pass_contenxt=True)
-async def purge(str : str):
-    await bot.say('Deleting Messages...')
-    await bot.delete_message(channel, str)
+@bot.command(pass_context=True)
+async def prune(ctx, number):
+    mgs = [] #Empty list to put all the messages in the log
+    number = int(number) #Converting the amount of messages to delete to an integer
+    async for x in Client.logs_from(ctx.message.channel, limit = number):
+        mgs.append(x)
+    await bot.delete_messages(mgs)
     
 @bot.command()
 async def choose(str : str, *args):

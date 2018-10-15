@@ -138,7 +138,7 @@ async def prune(ctx, number, *args):
         mgs.append(x)
     await bot.delete_messages(mgs)
     await asyncio.sleep(1)
-    await bot.say("I have deleted" + mesg + "messages")
+    await bot.say(channel, "I have deleted" + mesg + "messages")
     await bot.delete_messages("I have deleted" + mesg + "messages")
     
 @bot.command()

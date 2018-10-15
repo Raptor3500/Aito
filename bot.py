@@ -136,7 +136,7 @@ async def prune(ctx, number):
         mgs.append(x)
     await bot.delete_messages(mgs)
     await bot.say("I have deleted {} messages").format(number)
-    await bot.delete_messages("I have deleted {} messages").format(number))
+    await bot.delete_messages("I have deleted {} messages").format(number)
     
 @bot.command()
 async def choose(str : str, *args):

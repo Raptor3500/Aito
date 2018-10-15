@@ -138,7 +138,7 @@ async def prune(ctx, number, str : str):
     await bot.delete_messages(mgs)
     await asyncio.sleep(1)
     await bot.send_message("I have deleted" + str + "messages")
-    await bot.delete_messages("I have deleted" + number + "messages")
+    await bot.delete_messages("I have deleted" + str + "messages")
     
 @bot.command()
 async def choose(str : str, *args):

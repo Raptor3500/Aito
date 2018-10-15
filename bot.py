@@ -136,7 +136,7 @@ async def purge(ctx, *args):
     await bot.delete_message(str)
     
 @bot.command()
-async def choose(*choices, str):
+async def choose(*choices, str: str):
   choices = str, str
   str = str.strip()
   await bot.say(random.choice(choices))

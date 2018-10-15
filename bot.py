@@ -140,6 +140,13 @@ async def rps(str : str):
     if 'scissors' in str:
        await bot.say('I lost?!??!?')
         
+@bot.command(pass_contenxt=True)
+async def purge(ctx, *args):
+  if ctx.message.author.id in ownerID
+    mesg = ' '.join(args)
+    await bot.say('deleting messages...')
+    await bot.delete_message(mesg)
+        
     
 
   

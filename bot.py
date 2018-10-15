@@ -131,14 +131,12 @@ async def rate(str : str):
 @bot.command(pass_contenxt=True)
 async def purge(ctx, str : str):
   if ctx.message.author.id in ownerID:
-    str = str.strip()
     await bot.say('Deleting Messages...')
     await bot.delete_message(str)
     
 @bot.command()
-async def choose(*args):
+async def choose(str : str, *args):
   mesg = ' '.join(args)
-  str = str.strip()
   choices = [str, mesg]
   await bot.say('I choose {}'.format(random.choice(choices)))
         

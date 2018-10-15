@@ -131,7 +131,7 @@ async def rate(str : str):
 @bot.command(pass_contenxt=True)
 async def purge(str : str):
     await bot.say('Deleting Messages...')
-    await bot.delete_message(str)
+    await bot.delete_message(channel, str)
     
 @bot.command()
 async def choose(str : str, *args):

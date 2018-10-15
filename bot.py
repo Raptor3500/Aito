@@ -128,18 +128,6 @@ async def rate(str : str):
     if 'Xenzai' not in str:
         await bot.say('I rate {} a {}/10'.format(str, random.choice(number)))
         
-@bot.command(pass_context=True)
-async def rps(str : str):
-    str = str.strip()
-    if 'rock' in str:
-        await bot.say('I choose {}'.format(random.choice(number)))
-    if 'rock' in str:
-       await bot.say('TIE')
-    if 'paper' in str:
-       await bot.say('I win!!!!!!')
-    if 'scissors' in str:
-       await bot.say('I lost?!??!?')
-        
 @bot.command(pass_contenxt=True)
 async def purge(ctx, *args):
   if ctx.message.author.id in ownerID:

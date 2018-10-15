@@ -142,7 +142,7 @@ async def rps(str : str):
         
 @bot.command(pass_contenxt=True)
 async def purge(ctx, *args):
-  if ctx.message.author.id in ownerID
+  if ctx.message.author.id in ownerID:
     mesg = ' '.join(args)
     await bot.say('deleting messages...')
     await bot.delete_message(mesg)

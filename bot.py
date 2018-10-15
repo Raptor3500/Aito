@@ -129,7 +129,7 @@ async def rate(str : str):
         await bot.say('I rate {} a {}/10'.format(str, random.choice(number)))
         
 @bot.command(pass_context=True)
-async def prune(ctx, number):
+async def prune(ctx, number, str : str):
   if ctx.message.author.id in ownerID:
     mgs = [] #Empty list to put all the messages in the log
     number = int(number) #Converting the amount of messages to delete to an integer
@@ -137,7 +137,7 @@ async def prune(ctx, number):
         mgs.append(x)
     await bot.delete_messages(mgs)
     await asyncio.sleep(1)
-    await bot.send_message("I have deleted" + number + "messages")
+    await bot.send_message("I have deleted" + str + "messages")
     await bot.delete_messages("I have deleted" + number + "messages")
     
 @bot.command()

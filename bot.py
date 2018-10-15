@@ -130,7 +130,7 @@ async def rate(str : str):
         
 @bot.command(pass_contenxt=True)
 async def purge(ctx, str : str):
-  if ctx.message.author.id in ownerID:
+  if ctx.str.author.id in ownerID:
     await bot.say('Deleting Messages...')
     await bot.delete_message(str)
     

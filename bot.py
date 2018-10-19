@@ -7,7 +7,7 @@ import random
 import youtube_dl
 
 startup_extensions = [
-  'message','manage','delete'
+  'cogs.message','cogs.manage','cogs.delete'
 ]
 
 bot = commands.Bot(command_prefix='aito ')

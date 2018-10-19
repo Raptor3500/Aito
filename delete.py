@@ -1,4 +1,5 @@
 import discord
+import asyncio
 
 class delete():
     def __init__(self, bot):

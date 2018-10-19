@@ -147,6 +147,13 @@ async def choose(str : str, *args):
   mesg = ' '.join(args)
   choices = [str, mesg]
   await bot.say('I choose {}'.format(random.choice(choices)))
+  
+@bot.command(pass_context=True)
+async def setmygame(ctx, *args):
+  if ctx.message.author.id in ownerID:
+    mesg = ' '.join(args)
+    await bot.change_presence.id in ownerID (game=discord.Game(name= (mesg)))
+    await bot.say("you are now playing " + mesg)
 
         
     

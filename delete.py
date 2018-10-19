@@ -6,7 +6,7 @@ class delete():
         
         async def on_message(message):
             if message.author.id == '436294612521582603':
-                await bot.delete_message(message)
+                await self.bot.delete_message(message)
                 
 def setup(bot):
     bot.add_cog(delete(bot))

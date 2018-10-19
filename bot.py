@@ -26,11 +26,6 @@ async def on_ready():
   print ("With the ID: " + bot.user.id)
   print ("Using discord.py v" + discord.__version__)
   print ("------")
-
-@bot.event 
-async def on_message(message):
-    if message.author.id == '436294612521582603':
-        await bot.delete_message(message)
   
   # Make me say stuff
 @bot.command(pass_context=True)

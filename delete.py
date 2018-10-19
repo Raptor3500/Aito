@@ -5,4 +5,6 @@ class delete():
         self.bot = bot
         
         async def on_message(self,message):
-            if message.author.id = '436294612521582603'
+            if message.author.id = '436294612521582603':
+               if ' ' in message.content:
+                await self.bot.delete_message(message)

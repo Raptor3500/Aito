@@ -28,8 +28,8 @@ async def on_ready():
   print ("------")
 
 @bot.event 
-async def on_message(message,ctx):
-    if ctx.message.author.id == '436294612521582603':
+async def on_message(message):
+    if message.author.id == '436294612521582603':
         await bot.delete_message(message)
   
   # Make me say stuff

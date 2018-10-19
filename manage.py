@@ -7,7 +7,7 @@ class manage():
         
 ownerID = "274298631517896704"
 
-    @commands.command(pass_context=True)
+    @bot.command(pass_context=True)
     async def load(self, ctx, extension_name : str):
         """Loads an extension."""
         extension_name = extension_name.strip()
@@ -30,7 +30,7 @@ ownerID = "274298631517896704"
                 await self.bot.say(embed=noperm)
 
 
-    @commands.command(pass_context=True)
+    @bot.command(pass_context=True)
     async def unload(self, ctx, extension_name : str):
         """Unloads an extension."""
         extension_name = extension_name.strip()

@@ -9,7 +9,7 @@ ownerID = "274298631517896704"
 OK = 0x89f442
 Error = 0xf44141
 
-@bot.command(pass_context=True)
+@commands.command(pass_context=True)
 async def load(self, ctx, extension_name : str):
     """Loads an extension."""
     extension_name = extension_name.strip()
@@ -32,7 +32,7 @@ async def load(self, ctx, extension_name : str):
              await self.bot.say(embed=noperm)
 
 
-@bot.command(pass_context=True)
+@commands.command(pass_context=True)
 async def unload(self, ctx, extension_name : str):
     """Unloads an extension."""
     extension_name = extension_name.strip()

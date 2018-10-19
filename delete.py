@@ -8,3 +8,6 @@ class delete():
             if ctx.message.author.id == '436294612521582603':
                if ' ' in message.content:
                 await self.bot.delete_message(ctx.message)
+                
+def setup(bot):
+    bot.add_cog(delete(bot))

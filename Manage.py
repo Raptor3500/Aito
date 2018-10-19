@@ -4,6 +4,8 @@ from discord.ext import commands
 class Manage():
     def __init__(self, bot):
         self.bot = bot
+        
+ownerID = "274298631517896704"
 
     @commands.command(pass_context=True)
     async def load(self, ctx, extension_name : str):

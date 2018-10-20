@@ -66,7 +66,7 @@ class manage():
                 with open('Aito Isshoni pfp.png', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, ' ')
-                    await self.bot.change_presence(' ')
+                    await self.bot.change_presence()
                 
 
 

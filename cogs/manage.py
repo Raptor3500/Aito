@@ -57,7 +57,7 @@ class manage():
         if ctx.message.author.id in ownerID:
             str = str.strip()
             if 'agent' in str:
-                with open('Sora.png') as s:
+                with open('Sora.png', 'rb') as s:
                     await self.bot.edit_profile(avatar=s.read())
                     await self.bot.change_nick('Sora')
                     await self.bot.change_presence('with agents ;)))')

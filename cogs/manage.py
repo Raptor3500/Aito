@@ -56,7 +56,7 @@ class manage():
     async def bfmode(self, ctx, str : str):
         if ctx.message.author.id in ownerID:
             str = str.strip()
-            me = context.message.server.me
+            me = ctx.message.server.me
             if 'agent' in str:
                 with open('Sora.png', 'rb') as s:
                     await self.bot.edit_profile(avatar=s.read())

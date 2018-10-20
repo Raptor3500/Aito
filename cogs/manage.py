@@ -58,8 +58,8 @@ class manage():
             str = str.strip()
             me = ctx.message.server.me
             if 'agent' in str:
-                with open('Sora.png', 'rb') as s:
-                    await self.bot.edit_profile(avatar=s.read())
+                with open('Sora.png', 'rb') as f:
+                    await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, 'Sora')
                     await self.bot.change_presence('with agents ;)))')
             if 'reset' in str:

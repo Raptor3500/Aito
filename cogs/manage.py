@@ -53,7 +53,7 @@ class manage():
                 await self.bot.say(embed=noperm)
                 
     @commands.command(pass_context=True)
-        async def bfmode(self, ctx, str : str)
+    async def bfmode(self, ctx, str : str):
         if ctx.message.author.id in ownerID:
             str = str.strip()
             if 'agent' in str

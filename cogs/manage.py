@@ -56,15 +56,16 @@ class manage():
     async def bfmode(self, ctx, str : str):
         if ctx.message.author.id in ownerID:
             str = str.strip()
+            me = context.message.server.me
             if 'agent' in str:
                 with open('Sora.png', 'rb') as s:
                     await self.bot.edit_profile(avatar=s.read())
-                    await self.bot.change_nick('Sora')
+                    await self.bot.change_nick(me, 'Sora')
                     await self.bot.change_presence('with agents ;)))')
             if 'reset' in str:
                 with open('Aito Isshoni pfp.png') as a:
                     await self.bot.edit_profile(avatar=a.read())
-                    await self.bot.change_nick(' ')
+                    await self.change_nickname(me, ' ')
                     await self.bot.change_presence(' ')
                 
 

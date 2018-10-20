@@ -61,12 +61,10 @@ class manage():
                 with open('Sora.png', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, 'Sora')
-                    await self.bot.change_presence('with agents ;)))')
             if 'reset' in str:
                 with open('Aito Isshoni pfp.png', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, ' ')
-                    await self.bot.change_presence()
                 
 
 

@@ -53,9 +53,9 @@ class manage():
                 await self.bot.say(embed=noperm)
                 
     @commands.command(pass_context=True)
-    async def bfmode(self, ctx, args : str)
+        async def bfmode(self, ctx, str : str)
         if ctx.message.author.id in ownerID:
-            args = args.strip()
+            str = str.strip()
             if 'agent' in str
                 with open('sora.png') as s:
                     await self.bot.edit_profile(avatar=s.read())

@@ -51,17 +51,6 @@ class manage():
                 noperm = discord.Embed(title=None, description=None, color=Error)
                 noperm.add_field(name='Error', value='Are you sure you have enough permission to unload ' + extension_name, inline=True)
                 await self.bot.say(embed=noperm)
-                
-    @commands.command(pass_context=True)
-    async def bfmode(self, ctx, args : str):
-        if ctx.message.author.id in ownerID:
-            args = args.strip()
-            me = ctx.message.server.me
-            if "reset" in args:
-                with open('new aito isshoni pfp.jpg', 'rb') as f:
-                    await self.bot.edit_profile(avatar=f.read())
-                    await self.bot.change_nickname(me, ' ')
-                    await self.bot.change_presence(game=discord.Game(name= ' ')
                                                    
                                                    
                                                    

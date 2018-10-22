@@ -155,6 +155,19 @@ async def setmygame(ctx, *args):
     await bot.change_presence.id in ownerID (game=discord.Game(name= (mesg)))
     await bot.say("you are now playing " + mesg)
 
+@bot.command(pass_context=True)
+async def bfmode(ctx, str : str)
+  if ctx.message.author.id in ownerID:
+    if 'reset' in str:
+      with open('new aito isshoni pfp.jpg', 'rb') as f:
+        await bot.edit_profile(avatar=f.read())
+        await bot.change_nickname(' ')
+        await bot.change_presence(game=discord.Game(name= ' ')
+    if 'agent' in str:
+      with open('Sora.png', 'rb') as f:
+        await bot.edit_profile(avatar=f.read())
+        await bot.change_nickname('Sora')
+        await bot.change_presence(game=discord.Game(name= 'with agents ;)))')
         
     
 

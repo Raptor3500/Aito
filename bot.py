@@ -156,7 +156,7 @@ async def setmygame(ctx, *args):
     await bot.say("you are now playing " + mesg)
     
 @bot.command(pass_context=True)
-async def bfmode(ctx, str : str)
+async def bfmode(ctx, str : str):
   if ctx.message.author.id in ownerID:
     if 'agent' in str
       with open('Sora.png', 'rb') as f:

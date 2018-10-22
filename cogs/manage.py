@@ -51,6 +51,18 @@ class manage():
                 noperm = discord.Embed(title=None, description=None, color=Error)
                 noperm.add_field(name='Error', value='Are you sure you have enough permission to unload ' + extension_name, inline=True)
                 await self.bot.say(embed=noperm)
+                
+    @commands.command(pass_context=True)
+    async def pfp(self, ctx, args : str):
+        if ctx.message.author.id in ownerID:
+            args = args.strip()
+            if 'default' in args:
+                with open('new aito isshoni pfp.jpg', 'rb') as f:
+                    await self.bot.edit_profile(avatar=f.read())
+                    embed = discord.Embed(title=None, description=None, color=OK)
+                    embed.add_field(name='Profile', value='Profile Picture has changed.', inline=False)
+                    await self.bot.say(embed=embed)
+
                                                    
                                                    
                                                    

@@ -163,7 +163,7 @@ async def bfmode(ctx, str : str):
         await bot.edit_profile(avatar=f.read())
         await bot.change_nickname(' ')
         await bot.change_presence(game=discord.Game(name= ' ')
-    if 'agent' in str:
+    if 'agent' in str
       with open('Sora.png', 'rb') as f:
         await bot.edit_profile(avatar=f.read())
         await bot.change_nickname('Sora')

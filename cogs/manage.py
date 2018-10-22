@@ -62,7 +62,7 @@ class manage():
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, 'Sora')
                     await self.bot.change_presence(game=discord.Game(name= "I am AgentHi5's BF")
-            if 'reset' in str:
+            if "reset" in str:
                 with open('new aito isshoni pfp.jpg', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, ' ')

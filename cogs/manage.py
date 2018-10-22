@@ -62,7 +62,7 @@ class manage():
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, ' ')
                     await self.bot.change_presence(game=discord.Game(name= ' ')
-            if 'agent' in str:
+            elif 'agent' in str:
                 with open('Sora.png', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, 'Sora')

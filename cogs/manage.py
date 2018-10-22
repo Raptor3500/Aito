@@ -4,7 +4,6 @@ from discord.ext import commands
 OK = 0x89f442
 Error = 0xf44141
 ownerID = '274298631517896704'
-bot = commands.Bot(command_prefix='aito ')
 
 class manage():
     def __init__(self, bot):
@@ -61,7 +60,7 @@ class manage():
             if 'agent' in str:
                 with open('Sora.png', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
-                    await bot.change_presence("I am AgentHi5's BF")
+                    await self.bot.change_presence(game=discord.Game(name= "I am AgentHi5's BF")
                     await self.bot.change_nickname(me, 'Sora')
             if 'reset' in str:
                 with open('new aito isshoni pfp.jpg', 'rb') as f:

@@ -53,16 +53,16 @@ class manage():
                 await self.bot.say(embed=noperm)
                 
     @commands.command(pass_context=True)
-    async def bfmode(self, ctx, str : str):
+    async def bfmode(self, ctx, args : str):
         if ctx.message.author.id in ownerID:
-            str = str.strip()
+            args = args.strip()
             me = ctx.message.server.me
-            if "reset" in str:
+            if "reset" in args:
                 with open('new aito isshoni pfp.jpg', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, ' ')
                     await self.bot.change_presence(game=discord.Game(name= ' ')
-            if "reset" not in str:
+            if 'agent' in args
                 with open('Sora.png', 'rb') as f:
                     await self.bot.edit_profile(avatar=f.read())
                     await self.bot.change_nickname(me, 'Sora')

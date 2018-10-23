@@ -158,7 +158,7 @@ async def setmygame(ctx, *args):
 @bot.command(pass_context=True)
 async def bfmode(ctx, str : str):
   if ctx.message.author.id in ownerID:
-    if 'agent' in str
+    if 'agent' in str:
       with open('Sora.png', 'rb') as f:
       await bot.edit_profile(avatar=f.read())
       await bot.change_nickname('Sora')

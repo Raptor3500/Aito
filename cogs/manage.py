@@ -4,9 +4,7 @@ from discord.ext import commands
 OK = 0x89f442
 Error = 0xf44141
 
-ownerID = [
-    '274298631517896704'
-    ]
+ownerID = '274298631517896704'
 class manage():
     def __init__(self, bot):
         self.bot = bot

@@ -6,7 +6,6 @@ Error = 0xf44141
 
 ownerID = [
     '274298631517896704'
-    '405266248314781696'
     ]
 class manage():
     def __init__(self, bot):

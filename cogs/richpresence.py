@@ -1,4 +1,4 @@
-from pypresence import Presence
+import Presence
 import time
 
 class richpresence():
